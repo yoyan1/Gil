@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Linden+Hill:ital@0;1&family=Luckiest+Guy&family=Metrophobic&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* padding: 0 80px; */
+}
+
+header{
+    background: #A2B2B5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header .title{
+    display: flex;
+    gap: 40px;
+}
+
+header h1{
+    font-family: "Linden Hill", serif;
+    font-weight: 400;
+    font-style: normal; 
+    letter-spacing: 2.88px; 
+    word-wrap: break-word"
+}
+
+header input{
+    background: #D9D9D9;
+     box-shadow: 0px 4px 4px #00000040; 
+     border-radius: 25px;
+     border: none;
+     width: 275px;
+     padding-left: 20px;
+}
+
+header .nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+    font-size: 20px; 
+    font-family: "Linden Hill", serif;
+    font-weight: 400;
+    font-style: normal; 
+    word-wrap: break-word;
+    padding: 10px 20px;
+}
+
+.admin{
+    background: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.admin:hover{
+    background: #f5f3f3;
+}
+
+main{
+    background: #B2C2CD;
+    display: grid;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+main .image{
+    width: 320px; 
+    height: 400px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 490px
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.container .top{
+    display: grid;
+    gap: 20px;
+}
+
+.container .left_top{
+    display: flex;
+}
+
+.left_top .about{
+    padding: 40px 30px 30px 30px;
+    background: #CBDADC; 
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.63); 
+    border-radius: 45px; 
+    width: 40rem;
+    font-size: 20px; 
+    font-family: "Libre Baskerville", serif;
+    font-weight: 200;
+    font-style: normal;
+    word-wrap: break-word;
+}
+
+.left_top .info{
+    font-size: 20px;
+}
+
+
+.right{
+    display: flex;
+    gap: 20px;
+}
+
+.right div{
+    display: grid;
+    gap: 20px;
+}
+
+.right .group1{
+    position: relative;
+    top: -15px;
+}
+
+.right img, .img{
+    background: #ffffff;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.63); 
+    border-radius: 20px;
+    width: 199px; 
+    height: 195px;
+}
+.img_lwr{
+    height: 100px;
+}
+
+.info{
+    font-size: 22px; 
+    word-wrap: break-word
+}
+
+
+.bottom{
+    background: #F5F9FD;
+    height: 80px;
+}
