@@ -13,6 +13,7 @@ a{
 body{
     font-family: sans-serif;
     box-sizing: border-box;
+    background: #B2C2CD;
     /* padding: 0 80px; */
 }
 
@@ -60,13 +61,13 @@ header .nav{
     padding: 10px 20px;
 }
 
-.admin{
+.login{
     background: #D9D9D9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
-.admin:hover{
+.login:hover{
     background: #f5f3f3;
 }
 

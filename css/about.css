@@ -13,6 +13,7 @@ a{
 body{
     font-family: sans-serif;
     box-sizing: border-box;
+    background: #B2C2CD;
     /* padding: 0 80px; */
 }
 
@@ -60,13 +61,13 @@ header .nav{
     padding: 10px 20px;
 }
 
-.admin{
+.login{
     background: #D9D9D9;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.admin:hover{
+.login:hover{
     background: #f5f3f3;
 }
 
@@ -149,6 +150,148 @@ main .image{
 }
 
 
+/* //create css */
+
+.form_wrap{
+    padding: 0 50% 0 20px;
+    margin-top: -20px;
+}
+
+form{
+    padding: 30px;
+    background: rgb(206, 204, 204);
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    gap: 10px;
+}
+
+.form .image_wrap{
+    display: grid;
+    gap: 10px;
+}
+
+.image_wrap label{
+    text-align: center;
+    background: #ffffff;
+    width: 159px; 
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form textarea{
+    width: 20rem;
+    max-width: 20rem;
+    min-width: 20rem;
+    border: none;
+    padding: 20px;
+    min-height: 17rem;
+}
+
+form input{
+    display: none;
+}
+
+form .btn{
+    display: flex;
+    justify-content: right;
+    padding: 0 50px;
+}
+
+form button{
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.884);
+    border-radius: 10px;
+    border: black;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* blog css */
+
+.post{
+    margin-left: 10rem;
+}
+
+.img_con{
+    display: flex;
+    gap: 15px;
+    width: 50%;
+
+}
+
+.img_con img{
+    border-radius: 0;
+}
+
+.img_con div{
+    display: grid;
+}
+
+.text_post{
+    padding: 5px 10px;
+    min-height: 50px;
+    background: #ffffff;
+    width: 23.5rem;
+    font-size: 15px;
+}
+
+.action{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.comment{
+    margin-right: 5rem;
+    padding: 20px 40px;
+    border-left: 1px solid rgb(51, 50, 50);
+}
+
+.comment form{
+    padding: 0;
+    background: none;
+
+}
+
+.comment form textarea{
+    padding: 0 10px;
+    width: 24rem;
+    height: 4rem;
+    min-width: 24rem;
+    min-height: 4rem;
+    max-width: 24rem;
+    max-height: 4rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* blog css */
+
+.col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 18.5rem));
+    width: 100%;
+    padding: 0 30px;
+}
+
+.row{
+    border-right: 1px solid rgb(44, 44, 44);
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+}
+
+.row div{
+    padding: 10px;
+    min-height: 50px;
+    background: #ffffff;
+    margin-right: 32px;
+}
 .bottom{
     background: #F5F9FD;
     height: 80px;

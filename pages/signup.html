@@ -22,7 +22,7 @@
             <a href="../index.html">Home</a>
             <a href="./about.html">About me</a>
             <a href="./hobbies.html">Hobbies</a>
-            <a href="./login.html" class="admin">Admin</a>
+            <a href="./login.html" class="but">login</a>
         </div>
     </header>
     <main>
@@ -33,13 +33,13 @@
                 <div class="text">
                     <h3>Sign up</h3>
                 </div>
-                <div class="input">
-                    <input type="text" placeholder="Name"><br><br>
-                    <input type="email" placeholder="email"><br><br>
-                    <input type="text" placeholder="password"><br><br>
-                    <button>sign in</button><br><br>
+                <form action="../pages/php/register.php" method="post" class="input">
+                    <input type="text"  name="name" placeholder="Name"><br><br>
+                    <input type="email" name="email"  placeholder="email"><br><br>
+                    <input type="password"  name="password" placeholder="password"><br><br>
+                    <button type="submit" name="submit">sign in</button><br><br>
                     <p>have account?<a href="./login.html">signin</a></p>
-                </div>
+                </form>
             </div>
         </div>
         

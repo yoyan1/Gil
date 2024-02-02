@@ -17,7 +17,7 @@
             <a href="../index.html">Home</a>
             <a href="./about.html">About me</a>
             <a href="./hobbies.html">Hobbies</a>
-            <a href="./login.html" class="admin">Admin</a>
+            <a href="./login.html" class="but">login</a>
         </div>
     </header>
     <main>
@@ -28,12 +28,12 @@
                 <div class="text">
                     <h3>Sign in</h3>
                 </div>
-                <div class="input">
-                    <input type="email" placeholder="email"><br><br>
-                    <input type="text" placeholder="password"><br><br>
-                    <button>sign in</button><br><br>
+                <form action="./php/login.php" method="post" class="input">
+                    <input type="email" name="email"  placeholder="email"><br><br>
+                    <input type="password"  name="password" placeholder="password"><br><br>
+                    <button name="submit">sign in</button><br><br>
                     <p>no account?<a href="./signup.html">signup</a></p>
-                </div>
+                </form>
             </div>
         </div>
         
