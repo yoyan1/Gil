@@ -1,25 +1,18 @@
 <?php
+session_start();
 include "./server/conn.php";
-$browse = $conn->prepare("SELECT * FROM user WHERE  status = 'ONLINE'");
-$browse->execute();
-$user = $browse->get_result();
 
-if($user->num_rows > 0){
-    session_start();
-
-    $row_user = $user->fetch_assoc();
-    $id = $_SESSION['id'];
-    
-    $sql = "SELECT * FROM user WHERE id = ?";
-    
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $id);
-    $stmt->execute();
-    
-    $result = $stmt->get_result();
-    $row = $result->fetch_assoc();
-} else{
-    
+if(isset($_SESSION['id'])){
+        $id = $_SESSION['id'];
+        
+        $sql = "SELECT * FROM user WHERE id = ?";
+        
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
 }
 ?>
 <!DOCTYPE html>
